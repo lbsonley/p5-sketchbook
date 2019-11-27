@@ -1,5 +1,7 @@
 import Hogan from "hogan.js";
-import { defaultView } from "../views";
+import p5 from "p5";
+import { defaultView, sidebar } from "../views";
+import sketches from "../sketches";
 
 export const init = {
   ctx: function initCtx(ctx, next) {
@@ -11,18 +13,32 @@ export const init = {
 
 export const routes = {
   home: function(ctx, next) {
-    ctx.data.title = "Winter";
+    ctx.data.title = "Home";
     ctx.data.pageContent =
       "It snowed and snowed and snowed until we could barely see out the windows. So we climbed on the roof, strapped in to our floatiest boards and enjoyed the deep powder snow.";
     ctx.partials.content = defaultView;
     next();
   },
-  page: function(ctx, next) {
-    ctx.data.title = "Summer";
-    ctx.data.pageContent =
-      "As we pulled over the last sand dune, we were greeted by an emerald green ocean lined with evenly spaced corduroy all the way to the horizon. We could barely contain our excitement as we waxed up our surfboards and ran down to the beach.";
-    ctx.partials.content = defaultView;
+  sketchbook: function(ctx, next) {
+    ctx.data.title = "Sketchbook";
+    ctx.data.sidebarLinks = [
+      {
+        text: "Circles",
+        url: "circles"
+      },
+      {
+        text: "Squares",
+        url: "squares"
+      }
+    ];
+    ctx.partials.content = sidebar;
     next();
+  },
+  sketch: function(ctx) {
+    const sketch = ctx.params.sketch;
+    const el = document.querySelector("#sketch");
+    el.innerHTML = "";
+    new p5(sketches[sketch], "sketch");
   }
 };
 

@@ -6,7 +6,8 @@ import sum from "./scripts/index.js";
 
 page("*", init.ctx);
 page("/", routes.home);
-page("/summer", routes.page);
+page("/sketchbook", routes.sketchbook);
+page("/sketchbook/:sketch", routes.sketch);
 
 page("*", render.content);
 page();

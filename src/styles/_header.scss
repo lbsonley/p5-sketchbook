@@ -1,0 +1,11 @@
+header {
+  margin-top: map-get($spaces, sm);
+}
+
+.page-title {
+  margin-top: 0;
+  a {
+    text-decoration: none;
+    color: map-get($colors, anthracite);
+  }
+}

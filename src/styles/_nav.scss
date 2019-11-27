@@ -1,0 +1,15 @@
+.nav-list {
+  list-style: none;
+  margin: map-get($spaces, md) 0;
+  padding: 0;  
+}
+
+.nav-item {
+  display: inline;
+}
+
+.nav-link {
+  &:hover {
+    color: map-get($colors, theme-dark)
+  }
+}
