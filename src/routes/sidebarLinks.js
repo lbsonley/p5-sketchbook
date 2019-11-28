@@ -1,5 +1,9 @@
 export default [
   {
+    text: "Polygon Maker",
+    url: "polygon"
+  },
+  {
     text: "Arcs",
     url: "arcs"
   },

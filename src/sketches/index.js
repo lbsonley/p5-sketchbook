@@ -16,8 +16,14 @@ import pieChart from "./pieChart";
 import pieChartCode from "!!raw-loader!./pieChart";
 import arcs from "./arcs";
 import arcsCode from "!!raw-loader!./arcs";
+import polygon from "./polygon";
+import polygonCode from "!!raw-loader!./polygon";
 
 export default {
+  polygon: {
+    module: polygon,
+    code: polygonCode
+  },
   arcs: {
     module: arcs,
     code: arcsCode
