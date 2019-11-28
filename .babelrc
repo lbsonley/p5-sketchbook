@@ -10,6 +10,15 @@
   ],
   "plugins": [
     "@babel/plugin-syntax-dynamic-import",
-    "@babel/plugin-proposal-class-properties"
+    "@babel/plugin-proposal-class-properties",
+    ["prismjs", {
+      "languages": ["javascript", "css"],
+      "plugins": [
+        "normalize-whitespace",
+        "copy-to-clipboard"
+      ],
+      "theme": "tomorrow",
+      "css": true
+  }]
   ]
 }

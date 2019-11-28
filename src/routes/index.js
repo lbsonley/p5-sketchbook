@@ -1,5 +1,6 @@
 import Hogan from "hogan.js";
 import p5 from "p5";
+import Prism from "prismjs";
 import { defaultView, sidebar } from "../views";
 import sketches from "../sketches";
 import sidebarLinks from "./sidebarLinks";
@@ -35,14 +36,22 @@ export const render = {
   },
   sketch: function(ctx) {
     const sketch = ctx.params.sketch;
-    const el = document.querySelector("#sketch");
+    const sketchContainer = document.querySelector("#sketch");
+    const codeContainer = document.querySelector("#code");
     const allLinks = document.querySelectorAll("a");
     const activeLink = document.querySelector(
       `a[href="/sketchbook/${sketch}"]`
     );
+
     allLinks.forEach(link => link.classList.remove("active"));
     activeLink.classList.add("active");
-    el.innerHTML = "";
-    new p5(sketches[sketch], "sketch");
+
+    sketchContainer.innerHTML = "";
+    new p5(sketches[sketch].module, "sketch");
+
+    console.log(typeof sketches[sketch].code, sketches[sketch].code);
+    codeContainer.innerHTML = "";
+    codeContainer.innerHTML = sketches[sketch].code.trim();
+    Prism.highlightAll();
   }
 };

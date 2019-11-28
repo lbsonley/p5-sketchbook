@@ -1,5 +1,17 @@
 export default [
   {
+    text: "Arcs",
+    url: "arcs"
+  },
+  {
+    text: "Pie Chart",
+    url: "pieChart"
+  },
+  {
+    text: "Map Translation",
+    url: "mapTranslation"
+  },
+  {
     text: "Create Graphics",
     url: "createGraphics"
   },
