@@ -18,36 +18,36 @@ import arcs from "./arcs";
 import arcsCode from "!!raw-loader!./arcs";
 
 export default {
-  circles: {
-    module: circles,
-    code: circlesCode
-  },
-  squares: {
-    module: squares,
-    code: squaresCode
-  },
-  repeatingShapes: {
-    module: repeatingShapes,
-    code: repeatingShapesCode
-  },
-  recursion: {
-    module: recursion,
-    code: recursionCode
-  },
-  createGraphics: {
-    module: createGraphics,
-    code: createGraphicsCode
-  },
-  mapTranslation: {
-    module: mapTranslation,
-    code: mapTranslationCode
+  arcs: {
+    module: arcs,
+    code: arcsCode
   },
   pieChart: {
     module: pieChart,
     code: pieChartCode
   },
-  arcs: {
-    module: arcs,
-    code: arcsCode
+  mapTranslation: {
+    module: mapTranslation,
+    code: mapTranslationCode
+  },
+  createGraphics: {
+    module: createGraphics,
+    code: createGraphicsCode
+  },
+  recursion: {
+    module: recursion,
+    code: recursionCode
+  },
+  repeatingShapes: {
+    module: repeatingShapes,
+    code: repeatingShapesCode
+  },
+  squares: {
+    module: squares,
+    code: squaresCode
+  },
+  circles: {
+    module: circles,
+    code: circlesCode
   }
 };
