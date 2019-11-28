@@ -25,6 +25,7 @@ footer {
   flex-flow: column nowrap;
   max-height: 100%;
   border-right: 1px solid map-get($colors, anthracite);
+  overflow-y: scroll;
 }
 
 .sidebar-link {
@@ -37,10 +38,10 @@ footer {
   width: calc(100vw - 280px);
   display: inline-flex;
   flex-flow: column nowrap;
+  overflow-y: scroll;
 }
 
 .sketch {
-  margin-top: map-get($spaces, lg);
   margin-left: auto;
   margin-right: auto;
 }
