@@ -26,10 +26,12 @@ export const routes = {
 
 export const render = {
   content: function(ctx, next) {
+    const loading = document.querySelector("#loading");
     const el = document.querySelector("#content");
     const template = Hogan.compile(ctx.partials.content);
     const content = template.render(ctx.data, ctx.partials);
     el.innerHTML = content;
+    loading.style.display = "none";
 
     // if we are viewing a sketch, go on to render the sketch
     if (ctx.params.sketch) next();
@@ -49,7 +51,6 @@ export const render = {
     sketchContainer.innerHTML = "";
     new p5(sketches[sketch].module, "sketch");
 
-    console.log(typeof sketches[sketch].code, sketches[sketch].code);
     codeContainer.innerHTML = "";
     codeContainer.innerHTML = sketches[sketch].code.trim();
     Prism.highlightAll();
