@@ -12,16 +12,11 @@ export const init = {
 };
 
 export const routes = {
-  home: function(ctx, next) {
-    ctx.data.title = "Home";
-    ctx.data.pageContent =
-      "It snowed and snowed and snowed until we could barely see out the windows. So we climbed on the roof, strapped in to our floatiest boards and enjoyed the deep powder snow.";
-    ctx.partials.content = defaultView;
-    next();
-  },
   sketchbook: function(ctx, next) {
     ctx.partials.content = sidebar;
     ctx.data.title = "Sketchbook";
+    ctx.data.pageContent =
+      "It snowed and snowed and snowed until we could barely see out the windows. So we climbed on the roof, strapped in to our floatiest boards and enjoyed the deep powder snow.";
     ctx.data.sidebarLinks = [
       {
         text: "Circles",

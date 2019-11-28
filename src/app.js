@@ -5,7 +5,7 @@ import { init, routes, render } from "./routes";
 import sum from "./scripts/index.js";
 
 page("*", init.ctx);
-page("/", routes.home);
+page("/", "/sketchbook");
 page("/sketchbook", routes.sketchbook);
 page("/sketchbook/:sketch", routes.sketchbook);
 

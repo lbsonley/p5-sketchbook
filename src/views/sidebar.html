@@ -1,9 +1,13 @@
-<div>
-  {{#sidebarLinks}}
-    <a href="/sketchbook/{{url}}">{{text}}</a>
-  {{/sidebarLinks}}
-  {{#pageContent}}
-    {{pageContent}}
-  {{/pageContent}}
-  <div id="sketch"></div>
+<div class="sidebar-layout">
+  <div class="sidebar-nav">
+    {{#sidebarLinks}}
+      <a class="sidebar-link" href="/sketchbook/{{url}}">{{text}}</a>
+    {{/sidebarLinks}}
+  </div>
+  <div class="sidebar-content">
+    {{#pageContent}}
+      {{pageContent}}
+    {{/pageContent}}
+    <span class="sketch" id="sketch"></span>
+  </div>
 </div>

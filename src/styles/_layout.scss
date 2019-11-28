@@ -3,18 +3,46 @@ main {
 }
 
 footer {
-  margin: map-get($spaces, lg) 0 map-get($spaces, md) 0;
+  margin: map-get($spaces, md) map-get($spaces, sm);
 }
 
-.page-container {
-  display: flex;
-  flex-flow: column nowrap;
-  min-height: 100vh;
+.container {
   width: auto;
   margin-top: 0;
-  margin-left: map-get($spaces, md);
-  margin-right: map-get($spaces, md);
-  margin-bottom: map-get($spaces, md);
+  margin-left: map-get($spaces, sm);
+  margin-right: map-get($spaces, sm);
+  margin-bottom: map-get($spaces, sm);
+}
+
+.sidebar-layout {
+  display: flex;
+  height: calc(100vh - 186px);
+}
+
+.sidebar-nav {
+  width: 280px;
+  display: inline-flex;
+  flex-flow: column nowrap;
+  max-height: 100%;
+  border-right: 1px solid map-get($colors, anthracite);
+}
+
+.sidebar-link {
+  padding: map-get($spaces, sm);
+  font-weight: bold;
+}
+
+.sidebar-content {
+  padding: map-get($spaces, sm) map-get($spaces, md);
+  width: calc(100vw - 280px);
+  display: inline-flex;
+  flex-flow: column nowrap;
+}
+
+.sketch {
+  margin-top: map-get($spaces, lg);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex-grid {
@@ -23,7 +51,7 @@ footer {
   margin: 0 -map-get($spaces, xs);
 }
 
-@mixin makeColumns($columns: 12, $gutter: map-get($spaces, xs)) {
+@mixin makeGridColumns($columns: 12, $gutter: map-get($spaces, xs)) {
   @for $i from 1 through $columns {
     $width: ( $i / 12 ) * 100 * 1%;
     .col-#{$i} {
@@ -37,4 +65,4 @@ footer {
   }
 }
 
-@include makeColumns();
+@include makeGridColumns();

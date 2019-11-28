@@ -1,5 +1,7 @@
 header {
-  margin-top: map-get($spaces, sm);
+  flex: 0 1 100px;
+  padding: map-get($spaces, sm);
+  margin-bottom: map-get($spaces, sm);
 }
 
 .page-title {
