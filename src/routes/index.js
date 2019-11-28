@@ -2,6 +2,7 @@ import Hogan from "hogan.js";
 import p5 from "p5";
 import { defaultView, sidebar } from "../views";
 import sketches from "../sketches";
+import sidebarLinks from "./sidebarLinks";
 
 export const init = {
   ctx: function initCtx(ctx, next) {
@@ -15,18 +16,9 @@ export const routes = {
   sketchbook: function(ctx, next) {
     ctx.partials.content = sidebar;
     ctx.data.title = "Sketchbook";
-    ctx.data.pageContent =
-      "It snowed and snowed and snowed until we could barely see out the windows. So we climbed on the roof, strapped in to our floatiest boards and enjoyed the deep powder snow.";
-    ctx.data.sidebarLinks = [
-      {
-        text: "Circles",
-        url: "circles"
-      },
-      {
-        text: "Squares",
-        url: "squares"
-      }
-    ];
+    // ctx.data.pageContent =
+    //   "It snowed and snowed and snowed until we could barely see out the windows. So we climbed on the roof, strapped in to our floatiest boards and enjoyed the deep powder snow.";
+    ctx.data.sidebarLinks = sidebarLinks;
     next();
   }
 };
