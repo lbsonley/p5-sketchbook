@@ -20,6 +20,7 @@ export const routes = {
     next();
   },
   sketchbook: function(ctx, next) {
+    ctx.partials.content = sidebar;
     ctx.data.title = "Sketchbook";
     ctx.data.sidebarLinks = [
       {
@@ -31,14 +32,7 @@ export const routes = {
         url: "squares"
       }
     ];
-    ctx.partials.content = sidebar;
     next();
-  },
-  sketch: function(ctx) {
-    const sketch = ctx.params.sketch;
-    const el = document.querySelector("#sketch");
-    el.innerHTML = "";
-    new p5(sketches[sketch], "sketch");
   }
 };
 
@@ -48,5 +42,14 @@ export const render = {
     const template = Hogan.compile(ctx.partials.content);
     const content = template.render(ctx.data, ctx.partials);
     el.innerHTML = content;
+
+    // if we are viewing a sketch, go on to render the sketch
+    if (ctx.params.sketch) next();
+  },
+  sketch: function(ctx) {
+    const sketch = ctx.params.sketch;
+    const el = document.querySelector("#sketch");
+    el.innerHTML = "";
+    new p5(sketches[sketch], "sketch");
   }
 };

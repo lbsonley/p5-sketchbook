@@ -7,7 +7,8 @@ import sum from "./scripts/index.js";
 page("*", init.ctx);
 page("/", routes.home);
 page("/sketchbook", routes.sketchbook);
-page("/sketchbook/:sketch", routes.sketch);
+page("/sketchbook/:sketch", routes.sketchbook);
 
 page("*", render.content);
+page("/sketchbook/:sketch", render.sketch);
 page();
