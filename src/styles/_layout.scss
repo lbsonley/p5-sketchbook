@@ -24,13 +24,27 @@ footer {
   display: inline-flex;
   flex-flow: column nowrap;
   max-height: 100%;
-  border-right: 1px solid map-get($colors, anthracite);
   overflow-y: scroll;
 }
 
 .sidebar-link {
-  padding: map-get($spaces, sm);
+  margin-bottom: map-get($spaces, xs);
+  padding: map-get($spaces, sm) * 1.5;
   font-weight: bold;
+
+  border-right-width: 3px;
+	border-right-style: solid;
+  border-color: transparent;
+
+  transition: border-color 250ms;
+  
+  &.active,
+  &:hover {
+    color: map-get($colors, theme);
+    text-decoration: none;
+    border-color: map-get($colors, theme);
+    transition: border-color 250ms;
+  }
 }
 
 .sidebar-content {

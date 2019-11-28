@@ -36,6 +36,12 @@ export const render = {
   sketch: function(ctx) {
     const sketch = ctx.params.sketch;
     const el = document.querySelector("#sketch");
+    const allLinks = document.querySelectorAll("a");
+    const activeLink = document.querySelector(
+      `a[href="/sketchbook/${sketch}"]`
+    );
+    allLinks.forEach(link => link.classList.remove("active"));
+    activeLink.classList.add("active");
     el.innerHTML = "";
     new p5(sketches[sketch], "sketch");
   }
