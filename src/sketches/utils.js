@@ -21,6 +21,7 @@ export const colors = {
 
   // red
   bittersweetShimmer: "#bc4b51",
+  intlOrange: "#bc363d",
 
   // browns
   mellowApricot: "#f6b277",

@@ -1,5 +1,9 @@
 export default [
   {
+    text: "Basic Motion",
+    url: "basicMotion"
+  },
+  {
     text: "Polygon Maker",
     url: "polygon"
   },

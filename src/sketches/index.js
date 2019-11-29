@@ -18,8 +18,14 @@ import arcs from "./arcs";
 import arcsCode from "!!raw-loader!./arcs";
 import polygon from "./polygon";
 import polygonCode from "!!raw-loader!./polygon";
+import basicMotion from "./basicMotion";
+import basicMotionCode from "!!raw-loader!./basicMotion";
 
 export default {
+  basicMotion: {
+    module: basicMotion,
+    code: basicMotionCode
+  },
   polygon: {
     module: polygon,
     code: polygonCode
