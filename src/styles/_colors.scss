@@ -1,7 +1,29 @@
 $colors: (
-  theme: #A256FF,
-  theme-dark: darken(#A256FF, 10),
+  theme: #538272,
+  theme-dark: darken(#538272, 10),
+
+  // blacks
   black: #000,
-  anthracite: #333,
-  white: #fff
+  anthracite: #121212,
+  
+  //whites
+  white: #fff,
+  white-smoke: #f4f8f1,
+  cosmic-latte: #fdf9e8,
+
+  // red
+  bittersweet-shimmer: #bc4b51,
+  
+  // browns
+  mellow-apricot: #f6b277,
+  sandy-brown: #f4a259,
+
+  // yellows
+  vanilla: #f7e9a6,
+  buff: #f4f285,
+  
+  // greens
+  wintergreen-dream: #538272,
+  asparagus: #8cb369,
+  deep-space-sparkle: #43685b
 )

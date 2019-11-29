@@ -8,6 +8,34 @@ export const colorsRgb = {
 };
 
 export const colors = {
+  theme: "#538272",
+
+  // blacks
+  black: "#000",
+  anthracite: "#121212",
+
+  //whites
+  white: "#fff",
+  whiteSmoke: "#f4f8f1",
+  cosmicLatte: "#fdf9e8",
+
+  // red
+  bittersweetShimmer: "#bc4b51",
+
+  // browns
+  mellowApricot: "#f6b277",
+  sandyBrown: "#f4a259",
+
+  // yellows
+  vanilla: "#f7e9a6",
+  buff: "#f4f285",
+
+  // greens
+  wintergreenDream: "#538272",
+  asparagus: "#8cb369",
+  deepSpaceSparkle: "#43685b",
+
+  // rainbow
   red: "#ff3333",
   orange: "#ffad33",
   yellow: "#ffff33",
