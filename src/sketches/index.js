@@ -20,8 +20,14 @@ import polygon from "./polygon";
 import polygonCode from "!!raw-loader!./polygon";
 import basicMotion from "./basicMotion";
 import basicMotionCode from "!!raw-loader!./basicMotion";
+import vectorMotion from "./vectorMotion";
+import vectorMotionCode from "!!raw-loader!./vectorMotion";
 
 export default {
+  vectorMotion: {
+    module: vectorMotion,
+    code: vectorMotionCode
+  },
   basicMotion: {
     module: basicMotion,
     code: basicMotionCode

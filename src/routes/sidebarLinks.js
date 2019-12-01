@@ -1,5 +1,9 @@
 export default [
   {
+    text: "Vector Motion",
+    url: "vectorMotion"
+  },
+  {
     text: "Basic Motion",
     url: "basicMotion"
   },
