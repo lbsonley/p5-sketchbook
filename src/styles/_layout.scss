@@ -60,6 +60,11 @@ footer {
   margin-right: auto;
 }
 
+.code-wrapper {
+  max-width: 720px;
+  margin: 0 auto !important;
+}
+
 .flex-grid {
   display: flex;
   flex-flow: row wrap;
