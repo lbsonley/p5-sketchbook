@@ -26,8 +26,20 @@ import threeDMotion from "./threeDMotion";
 import threeDMotionCode from "!!raw-loader!./threeDMotion";
 import vectorLocations from "./vectorLocations";
 import vectorLocationsCode from "!!raw-loader!./vectorLocations";
+import acceleration from "./acceleration";
+import accelerationCode from "!!raw-loader!./acceleration";
+import randomWalk from "./randomWalk";
+import randomWalkCode from "!!raw-loader!./randomWalk";
 
 export default {
+  randomWalk: {
+    module: randomWalk,
+    code: randomWalkCode
+  },
+  acceleration: {
+    module: acceleration,
+    code: accelerationCode
+  },
   vectorLocations: {
     module: vectorLocations,
     code: vectorLocationsCode

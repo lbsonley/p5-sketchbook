@@ -1,5 +1,13 @@
 export default [
   {
+    text: "Random Walk",
+    url: "randomWalk"
+  },
+  {
+    text: "Acceleration",
+    url: "acceleration"
+  },
+  {
     text: "Vector Locations",
     url: "vectorLocations"
   },

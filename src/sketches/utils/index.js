@@ -1,2 +1,2 @@
 export * from "./colors";
-export * from "./Mover";
+export * from "./Accelerator";
