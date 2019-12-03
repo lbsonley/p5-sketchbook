@@ -11,11 +11,11 @@ export const colors = {
   theme: "#538272",
 
   // blacks
-  black: "#000",
+  black: "#000000",
   anthracite: "#121212",
 
   //whites
-  white: "#fff",
+  white: "#ffffff",
   whiteSmoke: "#f4f8f1",
   cosmicLatte: "#fdf9e8",
 

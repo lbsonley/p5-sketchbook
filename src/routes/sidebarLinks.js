@@ -1,5 +1,13 @@
 export default [
   {
+    text: "Vector Locations",
+    url: "vectorLocations"
+  },
+  {
+    text: "3D Motion",
+    url: "threeDMotion"
+  },
+  {
     text: "Vector Motion",
     url: "vectorMotion"
   },

@@ -22,8 +22,20 @@ import basicMotion from "./basicMotion";
 import basicMotionCode from "!!raw-loader!./basicMotion";
 import vectorMotion from "./vectorMotion";
 import vectorMotionCode from "!!raw-loader!./vectorMotion";
+import threeDMotion from "./threeDMotion";
+import threeDMotionCode from "!!raw-loader!./threeDMotion";
+import vectorLocations from "./vectorLocations";
+import vectorLocationsCode from "!!raw-loader!./vectorLocations";
 
 export default {
+  vectorLocations: {
+    module: vectorLocations,
+    code: vectorLocationsCode
+  },
+  threeDMotion: {
+    module: threeDMotion,
+    code: threeDMotionCode
+  },
   vectorMotion: {
     module: vectorMotion,
     code: vectorMotionCode
