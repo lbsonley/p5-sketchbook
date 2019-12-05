@@ -1,5 +1,29 @@
 export default [
   {
+    text: "Perlin Pattern",
+    url: "perlinPattern"
+  },
+  {
+    text: "Perlin Walker",
+    url: "perlinWalker"
+  },
+  {
+    text: "Perlin Noise",
+    url: "perlinNoise"
+  },
+  {
+    text: "Random Walk Exp",
+    url: "randomWalkExp"
+  },
+  {
+    text: "Paint Splatter",
+    url: "paintSplatter"
+  },
+  {
+    text: "Gaussian Distribution",
+    url: "gaussianDistribution"
+  },
+  {
     text: "Random Walk",
     url: "randomWalk"
   },

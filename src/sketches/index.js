@@ -30,8 +30,44 @@ import acceleration from "./acceleration";
 import accelerationCode from "!!raw-loader!./acceleration";
 import randomWalk from "./randomWalk";
 import randomWalkCode from "!!raw-loader!./randomWalk";
+import gaussianDistribution from "./gaussianDistribution";
+import gaussianDistributionCode from "!!raw-loader!./gaussianDistribution";
+import paintSplatter from "./paintSplatter";
+import paintSplatterCode from "!!raw-loader!./paintSplatter";
+import randomWalkExp from "./randomWalkExp";
+import randomWalkExpCode from "!!raw-loader!./randomWalkExp";
+import perlinNoise from "./perlinNoise";
+import perlinNoiseCode from "!!raw-loader!./perlinNoise";
+import perlinWalker from "./perlinWalker";
+import perlinWalkerCode from "!!raw-loader!./perlinWalker";
+import perlinPattern from "./perlinPattern";
+import perlinPatternCode from "!!raw-loader!./perlinPattern";
 
 export default {
+  perlinPattern: {
+    module: perlinPattern,
+    code: perlinPatternCode
+  },
+  perlinWalker: {
+    module: perlinWalker,
+    code: perlinWalkerCode
+  },
+  perlinNoise: {
+    module: perlinNoise,
+    code: perlinNoiseCode
+  },
+  randomWalkExp: {
+    module: randomWalkExp,
+    code: randomWalkExpCode
+  },
+  paintSplatter: {
+    module: paintSplatter,
+    code: paintSplatterCode
+  },
+  gaussianDistribution: {
+    module: gaussianDistribution,
+    code: gaussianDistributionCode
+  },
   randomWalk: {
     module: randomWalk,
     code: randomWalkCode
