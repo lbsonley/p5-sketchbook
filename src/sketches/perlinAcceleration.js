@@ -25,12 +25,10 @@ const Accelerator = p => {
   const offset = p.createVector(0, 10000);
   const step = p.createVector(0.03, 0.03);
   let noise;
-  // let acc = p.createVector(p.noise(offset.x), p.noise(offset.y));
   let acc;
 
   function update() {
     offset.add(step);
-    // acc = p.createVector(p.noise(offset.x), p.noise(offset.y));
     vel.add(acc);
     vel.limit(10);
     loc.add(vel);
