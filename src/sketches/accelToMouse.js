@@ -3,16 +3,57 @@ import { colors } from "./utils";
 
 const accelToMouse = p => {
   let acc;
+  let mover;
 
   p.setup = () => {
     p.createCanvas(500, 500);
-    acc = new AcceleratorCluster(p);
+    p.frameRate(30);
+    mover = Mover(p);
+    // acc = new AcceleratorCluster(p);
   };
 
   p.draw = () => {
     p.background(colors.japaneseIndigo);
-    acc.update();
-    acc.display();
+    // acc.update();
+    // acc.display();
+    mover.update();
+    mover.display();
+  };
+};
+
+const Mover = p => {
+  const size = p.createVector(60, 45);
+  const loc = p.createVector(p.random(0, p.width), p.random(0, p.height));
+  const vel = p.createVector(0, 0);
+  let acc;
+
+  function update() {
+    const mouse = p.createVector(p.mouseX, p.mouseY);
+    const dir = p5.Vector.sub(mouse, loc);
+    // scale accelearation based on magnitude
+    const inverse = 1 - 1 / dir.mag();
+
+    dir.normalize();
+    dir.mult(0.5 * inverse);
+
+    acc = dir;
+
+    vel.add(acc);
+    vel.limit(10);
+
+    loc.add(vel);
+  }
+
+  function display() {
+    p.strokeWeight(4);
+    p.stroke(colors.cosmicLatte);
+    p.fill(colors.vividRedTangelo);
+    p.rect(loc.x, loc.y, size.x, size.y);
+  }
+
+  return {
+    display,
+    update
   };
 };
 
