@@ -13,6 +13,8 @@ export const colors = {
   // blacks
   black: "#000000",
   anthracite: "#121212",
+  japaneseIndigo: "#223843",
+  jet: "#303036",
 
   //whites
   white: "#ffffff",
@@ -22,6 +24,11 @@ export const colors = {
   // red
   bittersweetShimmer: "#bc4b51",
   intlOrange: "#bc363d",
+
+  // oranges
+  portlandOrange: "#ff632b",
+  smashedPumpkin: "#f76936",
+  vividRedTangelo: "#e26131",
 
   // browns
   mellowApricot: "#f6b277",
@@ -35,6 +42,15 @@ export const colors = {
   wintergreenDream: "#538272",
   asparagus: "#8cb369",
   deepSpaceSparkle: "#43685b",
+
+  // blues
+  blueSapphire: "#16566c",
+  lapisLazuli: "#1f7897",
+  pictonBlue: "#30bced",
+
+  // purples
+  darkPurple: "#381d2a",
+  independence: "#424874",
 
   // rainbow
   red: "#ff3333",
