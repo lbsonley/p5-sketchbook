@@ -42,8 +42,26 @@ import perlinWalker from "./perlinWalker";
 import perlinWalkerCode from "!!raw-loader!./perlinWalker";
 import perlinPattern from "./perlinPattern";
 import perlinPatternCode from "!!raw-loader!./perlinPattern";
+import randomAcceleration from "./randomAcceleration";
+import randomAccelerationCode from "!!raw-loader!./randomAcceleration";
+import accelToMouse from "./accelToMouse";
+import accelToMouseCode from "!!raw-loader!./accelToMouse";
+import perlinAcceleration from "./perlinAcceleration";
+import perlinAccelerationCode from "!!raw-loader!./perlinAcceleration";
 
 export default {
+  perlinAcceleration: {
+    module: perlinAcceleration,
+    code: perlinAccelerationCode
+  },
+  accelToMouse: {
+    module: accelToMouse,
+    code: accelToMouseCode
+  },
+  randomAcceleration: {
+    module: randomAcceleration,
+    code: randomAccelerationCode
+  },
   perlinPattern: {
     module: perlinPattern,
     code: perlinPatternCode

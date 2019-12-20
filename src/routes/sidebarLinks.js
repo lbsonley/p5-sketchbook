@@ -1,5 +1,17 @@
 export default [
   {
+    text: "Perlin Acceleration",
+    url: "perlinAcceleration"
+  },
+  {
+    text: "Accelerate To Mouse",
+    url: "accelToMouse"
+  },
+  {
+    text: "Random Acceleration",
+    url: "randomAcceleration"
+  },
+  {
     text: "Perlin Pattern",
     url: "perlinPattern"
   },
